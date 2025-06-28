@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard - Healthcare System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>👨‍⚕️ Doctor Dashboard</h1>
+            <a href="/" class="back-link">← Back to Home</a>
+        </header>
+        
+        <main class="main-content">
+            <div class="card">
+                <h2>Patient Management</h2>
+                
+                <div class="search-section">
+                    <h3>🔍 Scan New Patient</h3>
+                    <p>Use the fingerprint sensor to identify a patient</p>
+                    
+                    <button id="scanPatient" class="btn btn-primary">
+                        📱 Scan Fingerprint
+                    </button>
+                    
+                    <div id="scanStatus" class="status-message"></div>
+                </div>
+                
+                <div id="patientResult" class="patient-result" style="display: none;">
+                    <h3>Patient Information</h3>
+                    <div id="patientInfo" class="patient-info"></div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="patients-list">
+                    <h3>📋 Registered Patients</h3>
+                    <div id="patientsList" class="patients-grid">
+                        <p>Loading patients...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="doctor.js"></script>
+</body>
+</html> 
